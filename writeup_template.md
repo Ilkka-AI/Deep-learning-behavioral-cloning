@@ -108,3 +108,11 @@ After the collection process, I had 11000 data points. This was double by augmen
 In the experimentation I randomly shuffled the data set and put 20% of the data into a validation set. 
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 2 as evidenced by validation error not decreasing or even increasing. I used an adam optimizer so that manually training the learning rate wasn't necessary.
+
+
+#### Track 2
+
+I gathered another training data set and from track 2 and taught a similar model on it, now using 3 epochs. The Lenet model works really well on track 2 as well. I have included a video and .h5 file from track 2. 
+
+
+
