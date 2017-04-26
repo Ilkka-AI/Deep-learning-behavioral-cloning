@@ -12,27 +12,8 @@ The goals / steps of this project are the following:
 
 
 
-###Files Submitted & Code Quality
 
-####1. Submission includes all required files and can be used to run the simulator in autonomous mode
-
-My project includes the following files:
-* model.py containing the script to create and train the model
-* drive.py for driving the car in autonomous mode
-* model.h5 containing a trained convolution neural network 
-* writeup_report.md or writeup_report.pdf summarizing the results
-
-####2. Submission includes functional code
-Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
-```sh
-python drive.py model.h5
-```
-
-####3. Submission code is usable and readable
-
-The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
-
-###Model Architecture and Training Strategy
+#### Model Architecture and Training Strategy
 
 I used simply the Lenet architecture provided in the instructions. I got it working quite well. I also tried the Nvidia model, but at first glance it didn't work so well. 
 
@@ -47,20 +28,20 @@ The model was trained and validated on different data sets to ensure that the mo
 
 
 
-####3. Model parameter tuning
+#### Model parameter tuning
 
 The model used an adam optimizer, so the learning rate was not tuned manually.
 
-####4. Appropriate training data
+####  Appropriate training data
 
 Training data was generated to keep the vehicle driving on the road. I drove two laps, plus one in the opposite direction. I then put extra emphasis on driving the curves, in both directions. Furthermore, I gathered extensively recovery examples, especially in the curves. Three example images are included, one from the center of the road and two recovery images. This is probably the reason why such a simple model worked so well. Keyboard controls were sufficient, no need for joystick. 
 
 I augmented the dataset by flipping the images to avoid directional bias. 
 
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. Solution Design Approach
+####  Solution Design Approach
 
 I started by experimenting. I compared the provided Lenet to the Nvidia model, also trying to use dropout in the latter. I also tried different numbers of epochs in training. It quickly started looking like Lenet was performing much better when checking how the car was performing in autonomous mode. I also noticed more than two epochs made the model perform worse in the the autonomous mode. 
 
@@ -73,7 +54,7 @@ During experimenting, I ran the simulator to see how well the car was driving ar
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
-####2. Final Model Architecture
+####  Final Model Architecture
 
 My final model architecture was:
 
@@ -99,7 +80,7 @@ Dense(1)
 
 
 
-#### 3. Creation of the Training Set & Training Process
+####  Creation of the Training Set & Training Process
 
 Explained above. 
 
