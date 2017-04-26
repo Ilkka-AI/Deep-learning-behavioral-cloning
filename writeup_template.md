@@ -53,7 +53,7 @@ The model used an adam optimizer, so the learning rate was not tuned manually.
 
 ####4. Appropriate training data
 
-Training data was generated to keep the vehicle driving on the road. I drove two laps, plus one in the opposite direction. I then put extra emphasis on driving the curves, in both directions. Furthermore, I gathered extensively recovery examples, especially in the curves. This is probably the reason why such a simple model worked so well. Keyboard controls were sufficient, no need for joystick. 
+Training data was generated to keep the vehicle driving on the road. I drove two laps, plus one in the opposite direction. I then put extra emphasis on driving the curves, in both directions. Furthermore, I gathered extensively recovery examples, especially in the curves. Three example images are included, one from the center of the road and two recovery images. This is probably the reason why such a simple model worked so well. Keyboard controls were sufficient, no need for joystick. 
 
 I augmented the dataset by flipping the images to avoid directional bias. 
 
