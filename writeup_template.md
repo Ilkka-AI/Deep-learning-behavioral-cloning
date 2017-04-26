@@ -40,7 +40,7 @@ I used the lambda layer for normalization, cropping to remove unnecesary parts o
 
 Attempts to reduce overfitting in the model
 
-The model contains two maxpooling layers in order to reduce overfitting. I also noticed that only a few epochs were needed in training the model to avoid overfitting. Two epochs turned out to be the optimum, after that the validation error started increasing again or stayed constant. 
+A major choise for avoiding overfitting is to try to choose as simple model as possible. That is why Lenet is a great choice compared to the Nvidia model, especially as it seems to be sufficient. Also, the model contains two maxpooling layers in order to reduce overfitting. I also noticed that only a few epochs were needed in training the model to avoid overfitting. Two epochs turned out to be the optimum, after that the validation error started increasing again or stayed constant. 
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting using the Keras validation_split. The model was tested by running it through the simulator and it runs great. 
 
