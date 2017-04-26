@@ -99,7 +99,7 @@ Dense(1)
 
 
 
-####3. Creation of the Training Set & Training Process
+#### 3. Creation of the Training Set & Training Process
 
 Explained above. 
 
@@ -112,7 +112,7 @@ I used this training data for training the model. The validation set helped dete
 
 #### Track 2
 
-I gathered another training data set and from track 2 and taught a similar model on it, now using 3 epochs. The Lenet model works really well on track 2 as well. I have included a video and .h5 file from track 2. 
+I gathered another training data set of 5500 samples from track 2 and taught a similar model on it, now using 3 epochs as it was the optimum. The Lenet model works really well on track 2 as well. I have included a video and .h5 file from track 2. 
 
 
 
